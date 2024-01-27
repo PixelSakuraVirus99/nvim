@@ -12,7 +12,16 @@ Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
 Plug 'christoomey/vim-tmux-navigator'	"poder navegar entre archivos abiertos
 Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente
-
+Plug 'chemzqm/vim-jsx-improve' " uses vim-javascript and vim-jsx-pretty
+Plug 'HerringtonDarkholme/yats.vim' " ts syntax highlighter
+Plug 'peitalin/vim-jsx-typescript' " highlighting for jsx in ts
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' } " for styled or css syntax in js/ts files
+Plug 'prettier/vim-prettier', {  
+  \ 'do': 'yarn install', 
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+" Or build from source code by using npm
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+Plug 'jiangmiao/auto-pairs'
 call plug#end() 			"cerramos el llamado de los plugins
 
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
